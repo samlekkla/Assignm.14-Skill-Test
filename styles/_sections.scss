@@ -1,0 +1,450 @@
+.page1 {
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../images/page1/page1background.png);
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        width: 100%;
+        color: white;
+
+    }
+
+    &__content {
+        display: flex;
+        line-height: 0.1rem;
+        flex-direction: column;
+        /* placera elementen bredvid varandra */
+        align-items: center;
+        /* centrera elementen vertikalt */
+    }
+
+    &__mainlogo {
+        font-size: 48px;
+        font-weight: bold;
+        letter-spacing: 2.4px;
+    }
+
+    &__subtext {
+        margin-top: 5px;
+        font-size: 19px;
+        font-weight: 400;
+        letter-spacing: 6.5px;
+    }
+
+    &__search__container {
+        position: relative;
+        display: inline-block;
+        margin-top: 40px;
+        border-color: white;
+    }
+
+    &__search__input {
+        width: 503px;
+        height: 50px;
+        padding-right: 40px;
+    }
+
+    &__search__button {
+        width: 150px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        padding: 5px 10px;
+        border-radius: 2px;
+        color: white;
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        letter-spacing: 1.4px;
+        background-color: #5474FD;
+
+        transition: background-color 0.3s ease;
+        border-color: white;
+        cursor: pointer;
+
+    }
+
+    &__search__button i {
+        margin-left: 4px;
+    }
+
+    &__search__button:hover {
+        background-color: #8da0f3;
+    }
+
+
+    &__search__input::placeholder {
+        text-align: center;
+        margin-right: 6em;
+        font-size: 15px;
+        font-family: 'Josefin Sans';
+        letter-spacing: 1.4px;
+        font-weight: 400;
+    }
+
+    &__scrolldowndiv {
+        margin-top: 22%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__scrolldown {
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 2.8px;
+        color: white;
+    }
+
+}
+
+.page2 {
+    &__container {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-image: url(../images/page2/page2background.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        max-width: 560px;
+        width: 100%;
+        margin-left: 20px;
+        color: white;
+        line-height: 20px;
+        margin-bottom: 20px;
+
+
+    }
+
+    &__logo {
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+    }
+
+    &__subcontent {
+        line-height: 26px;
+        letter-spacing: 1.6px;
+        font-weight: 300;
+        font-size: 16px;
+    }
+
+    &__button {
+        margin-top: 10%;
+        width: 100%s;
+        max-width: 250px;
+        min-height: 70px;
+        height: 100%;
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 350;
+        font-size: 16px;
+        color: #FFFFFF;
+        background-color: #5474FD;
+        letter-spacing: 1.2px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+    }
+
+    &__button:hover {
+        background-color: #8da0f3;
+    }
+
+    &__pics {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 500px;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 5%;
+
+    }
+
+    &__pic1 {
+        display: flex;
+        align-self: start;
+        margin-right: 20px;
+    }
+
+    &__pic2 {
+        align-self: center;
+        margin-right: 20px;
+
+    }
+
+    &__crossline {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        /* Ändra bredden enligt behov */
+    }
+
+    &__footbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #333333;
+        background-position: cover;
+        width: 100%;
+        min-height: 40vh;
+        height: 100%;
+    }
+
+    &__icondiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: scale(1.3);
+        background-color: #333333;
+        /* Justera skalningen efter behov */
+    }
+
+
+    &__footbaricons {
+        display: flex;
+        flex-direction: row;
+        gap: 14rem;
+
+
+    }
+
+    &__keyword {
+        color: white;
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        /* Justera fontstorleken efter behov */
+    }
+
+}
+
+.page3 {
+    &__container {
+        background-image: url(../images/page3/page3background.png);
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        display: flex;
+        width: 100%;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        max-width: 543px;
+        width: 100%;
+        min-height: 374px;
+        height: 100%;
+        background-color: rgba(35, 35, 35, 0.8);
+        margin: auto;
+        margin-top: 13%;
+        padding: 2%;
+        color: white;
+        margin-left: 10%;
+    }
+
+    &__h4 {
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 250;
+        font-size: 20px;
+        letter-spacing: 1.5px;
+
+    }
+
+    &__h3 {
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 350;
+        font-size: 20px;
+        display: flex;
+        letter-spacing: 1.5px;
+
+    }
+
+    &__subcontent {
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 250;
+        letter-spacing: 1.5px;
+        line-height: 23px;
+    }
+
+    &__button {
+        margin-top: 10%;
+        width: 100%s;
+        max-width: 250px;
+        min-height: 70px;
+        height: 100%;
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 350;
+        font-size: 16px;
+        color: #FFFFFF;
+        background-color: #5474FD;
+        letter-spacing: 1.2px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+}
+
+.page4 {
+
+    &__container {
+        background-image: url(../images/page4/page4background.png);
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        display: flex;
+        width: 100%;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        max-width: 543px;
+        width: 100%;
+        min-height: 374px;
+        height: 100%;
+        background-color: rgba(35, 35, 35, 0.8);
+        margin: auto;
+        margin-top: 13%;
+        padding: 2%;
+        color: white;
+        margin-right: 10%;
+    }
+
+    &__h4 {
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 250;
+        font-size: 20px;
+        letter-spacing: 1.5px;
+
+    }
+
+    &__h3 {
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 350;
+        font-size: 20px;
+        display: flex;
+        letter-spacing: 1.5px;
+
+    }
+
+    &__subcontent {
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 250;
+        letter-spacing: 1.5px;
+        line-height: 23px;
+    }
+
+    &__button {
+        margin-top: 10%;
+        width: 100%s;
+        max-width: 250px;
+        min-height: 70px;
+        height: 100%;
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 350;
+        font-size: 16px;
+        color: #FFFFFF;
+        background-color: #5474FD;
+        letter-spacing: 1.2px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+}
+
+.page5 {
+
+    &__subjectdiv {
+        margin: auto;
+        display: flex;
+        margin-top: 5%;
+    }
+
+    &__subject {
+        display: flex;
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        color: white;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        background-image: url(../images/page5/page5background.png);
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        width: 100%;
+
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        color: white;
+        max-width: 1150px;
+        width: 100%;
+        height: auto;
+        margin-bottom: 13%;
+    }
+
+    &__subcontent {
+        background-color: #333333;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        color: white;
+    }
+
+    &__h3 {
+        display: flex;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    &__text {
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 250;
+        letter-spacing: 1.5px;
+        padding: 20px;
+        margin: 20px
+    }
+
+    
+
+}
