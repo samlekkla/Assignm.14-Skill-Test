@@ -6,7 +6,6 @@ header {
     height: 10vh;
     background-color: #5474FD;
     color: white;
-
 }
 
 .logo {
@@ -17,13 +16,11 @@ header {
 .nav {
     display: flex;
 
-
     &__list {
         display: flex;
         gap: 2rem;
         color: white;
         margin-top: 4.5%;
-
     }
 
     &__li {
@@ -35,14 +32,13 @@ header {
         color: white;
         text-decoration: none;
         font-size: 50px;
-
     }
 }
 
-
-.menu-toggle i {
+.menu-toggle {
     cursor: pointer;
     font-size: 24px;
+    display: none; 
 }
 
 .nav__list.active {
@@ -61,7 +57,6 @@ header {
     transition: opacity 0.3s ease, visibility 0s linear 0.3s;
 }
 
-
 .nav__list li {
     list-style: none;
     margin-bottom: 10px;
@@ -76,4 +71,26 @@ header {
 
 .nav__list a:hover {
     color: #a2aee5;
+}
+
+.nav__link {
+    display: flex;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .nav__list {
+        display: none;
+    }
+
+    .nav__link {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
 }
