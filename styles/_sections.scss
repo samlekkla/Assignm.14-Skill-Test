@@ -90,6 +90,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
 
     &__scrolldown {
@@ -97,9 +98,12 @@
         font-size: 14px;
         letter-spacing: 2.8px;
         color: white;
+        
     }
 
 }
+
+
 
 .page2 {
     &__container {
@@ -158,10 +162,6 @@
         cursor: pointer;
         transition: background-color 0.3s ease;
 
-    }
-
-    &__button:hover {
-        background-color: #8da0f3;
     }
 
     &__pics {
@@ -230,6 +230,8 @@
         font-weight: 400;
         font-size: 22px;
     }
+
+    
 
 }
 
@@ -443,3 +445,8 @@
     
 
 }
+
+.page2__button:hover, .page3__button:hover, .page4__button:hover {
+    background-color: #333; 
+    color: #fff;
+  }

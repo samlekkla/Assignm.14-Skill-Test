@@ -1,4 +1,3 @@
-@import 'font';
 @import 'footer';
 @import 'header';
 @import 'main';
@@ -9,7 +8,8 @@
 body {
     font-family: 'Josefin Sans';
     font-style: normal;
+    max-width: 1800px;
     width: 100%;
     height: 100%;
-    margin: auto;
+    margin: 0 auto;
 }

@@ -1,10 +1,15 @@
 header {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
     display: flex;
     justify-content: space-around;
+    align-self: baseline;
     align-items: center;
     width: 100%;
     height: 10vh;
-    background-color: #5474FD;
+    background-color: #050606;
     color: white;
 }
 
@@ -15,30 +20,43 @@ header {
 
 .nav {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
 
     &__list {
         display: flex;
         gap: 2rem;
         color: white;
         margin-top: 4.5%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
     }
 
     &__li {
         color: white;
         list-style: none;
+        margin: 0;
+
     }
 
     &__link {
         color: white;
         text-decoration: none;
-        font-size: 50px;
+        font-size: 18px;
+        transition: color 0.3s ease;
     }
+}
+
+.nav__link:hover {
+    color: #a2aee5;
 }
 
 .menu-toggle {
     cursor: pointer;
     font-size: 24px;
-    display: none; 
+    display: none;
 }
 
 .nav__list.active {
@@ -60,6 +78,7 @@ header {
 .nav__list li {
     list-style: none;
     margin-bottom: 10px;
+    margin: 0;
 }
 
 .nav__list a {
@@ -73,9 +92,7 @@ header {
     color: #a2aee5;
 }
 
-.nav__link {
-    display: flex;
-}
+
 
 .menu-toggle {
     display: none;
@@ -93,4 +110,12 @@ header {
     .menu-toggle {
         display: block;
     }
+
+    .nav.active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
 }
